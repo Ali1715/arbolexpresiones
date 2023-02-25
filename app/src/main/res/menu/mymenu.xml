@@ -10,6 +10,7 @@
         android:title="Menu"
         app:showAsAction="always">
 
+
         <menu>
             <item
                 android:id="@+id/btnadd"

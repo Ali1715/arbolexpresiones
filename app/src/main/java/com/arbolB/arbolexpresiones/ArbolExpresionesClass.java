@@ -48,7 +48,6 @@ public class ArbolExpresionesClass extends AppCompatActivity {
             if(auxS.charAt(i)=='n')
                 auxS = auxS.replaceAll("n",n);
         }
-
         auxS = auxS.replace(")(", ")*(");
         for (int i = 0; i <= 9; i++) {
             auxS = auxS.replace(Integer.toString(i) + "(", Integer.toString(i) + "*(");

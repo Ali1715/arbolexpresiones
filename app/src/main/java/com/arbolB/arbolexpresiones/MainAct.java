@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainAct extends AppCompatActivity {
 
-   // Button btnIniciar;
+    // Button btnIniciar;
     EditText expresion;
     Button btncalcular;
     EditText ediTvalorn;
@@ -28,19 +28,18 @@ public class MainAct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.generador_exp);
 
-        ediTvalorn=(EditText) findViewById(R.id.ediT_valor_n);
-        expresion=(EditText) findViewById(R.id.EdTexpresion);
-        btncalcular=(Button) findViewById(R.id.btnCalcular);
-        resultado=(TextView)findViewById(R.id.Textview_resultado);
+        ediTvalorn = (EditText) findViewById(R.id.ediT_valor_n);
+        expresion = (EditText) findViewById(R.id.EdTexpresion);
+        btncalcular = (Button) findViewById(R.id.btnCalcular);
+        resultado = (TextView) findViewById(R.id.Textview_resultado);
 
         btncalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-
-                a.Arbol(a.AcomodarExpresion(expresion.getText().toString(),ediTvalorn.getText().toString()));
-                double resp= a.Resultado();
+                a.Arbol(a.AcomodarExpresion(expresion.getText().toString(), ediTvalorn.getText().toString()));
+                double resp = a.Resultado();
                 resultado.setText(String.valueOf(resp));
 
 
@@ -51,16 +50,16 @@ public class MainAct extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.mymenu,menu);
+        getMenuInflater().inflate(R.menu.mymenu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.btnadd:
-                Toast.makeText(getBaseContext(),"Diagramas",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Diagramas", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
-        }
+}
