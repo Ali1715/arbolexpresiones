@@ -42,8 +42,12 @@ public class ArbolExpresionesClass extends AppCompatActivity {
     }
 
     //Acomodar expresion
-    public String AcomodarExpresion(String exp) {
+    public String AcomodarExpresion(String exp,String n) {
         String auxS = exp;
+        for (int i = 0; i < auxS.length(); i++) {
+            if(auxS.charAt(i)=='n')
+                auxS = auxS.replaceAll("n",n);
+        }
         auxS = auxS.replace(")(", ")*(");
         for (int i = 0; i <= 9; i++) {
             auxS = auxS.replace(Integer.toString(i) + "(", Integer.toString(i) + "*(");

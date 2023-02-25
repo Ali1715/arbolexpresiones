@@ -37,12 +37,9 @@ public class MainAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String n;
-                n= ediTvalorn.getText().toString();
-               // a.Cambiarxn(n);
 
 
-                a.Arbol(a.AcomodarExpresion(expresion.getText().toString()));
+                a.Arbol(a.AcomodarExpresion(expresion.getText().toString(),ediTvalorn.getText().toString()));
                 double resp= a.Resultado();
                 resultado.setText(String.valueOf(resp));
 
@@ -52,7 +49,18 @@ public class MainAct extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mymenu,menu);
+        return true;
+    }
 
-
-
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.btnadd:
+                Toast.makeText(getBaseContext(),"Diagramas",Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

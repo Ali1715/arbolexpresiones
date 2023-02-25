@@ -12,7 +12,7 @@
             <item
                 android:id="@+id/btnadd"
                 android:icon="@drawable/ic_add"
-                android:onClick="ListDiag"
+
                 android:title="Diagramas" />
 
             <item
