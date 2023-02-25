@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/btnmore"
+        android:icon="@drawable/ic_more"
+        android:title="Menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/btnadd"
+                android:icon="@drawable/ic_add"
+                android:onClick="ListDiag"
+                android:title="Diagramas" />
+
+            <item
+                android:id="@+id/btncode"
+                android:icon="@drawable/ic_code"
+                android:title="Generar Cod Phyton"
+                />
+            <item
+                android:id="@+id/btnsalir"
+                android:icon="@drawable/ic_close_"
+                android:title="Salir"
+                />
+        </menu>
+
+    </item>
+
+</menu>
