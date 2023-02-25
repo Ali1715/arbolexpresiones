@@ -34,6 +34,7 @@ public class MainAct extends AppCompatActivity {
         resultado=(TextView)findViewById(R.id.Textview_resultado);
 
         btncalcular.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
@@ -63,4 +64,5 @@ public class MainAct extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
