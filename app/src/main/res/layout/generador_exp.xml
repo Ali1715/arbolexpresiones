@@ -173,15 +173,15 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="150dp"
-        android:layout_height="94dp"
+        android:layout_width="97dp"
+        android:layout_height="92dp"
         android:background="@color/design_default_color_background"
         app:layout_constraintBottom_toBottomOf="@+id/btnCalcular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintHorizontal_bias="0.248"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.746" />
+        app:layout_constraintVertical_bias="0.758" />
 
     <EditText
         android:id="@+id/editText_if"

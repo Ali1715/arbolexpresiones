@@ -130,10 +130,7 @@ public class MainAct extends AppCompatActivity {
         switch (i) {
 
                  case 1:
-                textView.append("n="+n + "\n");     //solo muestra los valores de
-                      textView.append("c="+x + "\n");
-                      textView.append("if " + "c" + m + e + ":"+ "\n");
-                     textView.append("print("+r +  ")" +"\n");
+                textView.setText("n="+n + "\n"+"c="+x + "\n"+"if " + "c" + m + e + ":"+ "\n"+"print("+r +  ")" +"\n");     //solo muestra los valores de
                      break;
 
                  default:
