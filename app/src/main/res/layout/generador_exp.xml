@@ -89,29 +89,29 @@
 
     <TextView
         android:id="@+id/textView_n"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
         android:ems="1"
-        android:text="n"
+        android:text="Dar un valor a n"
         app:layout_constraintBottom_toBottomOf="@+id/input"
-        app:layout_constraintEnd_toEndOf="@+id/input"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="@+id/input"
-        app:layout_constraintTop_toTopOf="@+id/input"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.521" />
 
     <TextView
         android:id="@+id/textView_resp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="65dp"
+        android:layout_height="27dp"
         android:ems="1"
-        android:text="c"
+        android:text="resultado"
         app:layout_constraintBottom_toBottomOf="@+id/output"
         app:layout_constraintEnd_toEndOf="@+id/output"
-        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="@+id/output"
-        app:layout_constraintTop_toTopOf="@+id/output"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_if2"
+        app:layout_constraintVertical_bias="0.153" />
 
     <Button
         android:id="@+id/btnCalcular"
@@ -130,10 +130,10 @@
         android:layout_height="54dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input"
-        app:layout_constraintVertical_bias="0.207"
+        app:layout_constraintVertical_bias="0.17"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
@@ -214,33 +214,33 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="9dp"
-        android:layout_height="27dp"
-        android:text="if"
+        android:layout_width="85dp"
+        android:layout_height="36dp"
+        android:text="Condicion if"
         app:layout_constraintBottom_toTopOf="@+id/editText_if"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/expresion"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.761" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="63dp"
-        android:layout_height="15dp"
+        android:layout_width="135dp"
+        android:layout_height="27dp"
         android:ems="2"
-        android:text="c="
+        android:text="colocar expresion"
         app:layout_constraintBottom_toBottomOf="@+id/EdTexpresion"
         app:layout_constraintEnd_toEndOf="@+id/EdTexpresion"
-        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="@+id/EdTexpresion"
         app:layout_constraintTop_toBottomOf="@+id/input"
-        app:layout_constraintVertical_bias="0.56" />
+        app:layout_constraintVertical_bias="0.201" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="23dp"
-        android:layout_height="43dp"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
         android:text="c"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toStartOf="@+id/editText_if"

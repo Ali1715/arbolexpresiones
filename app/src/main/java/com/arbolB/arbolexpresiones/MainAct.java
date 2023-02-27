@@ -59,7 +59,7 @@ public class MainAct extends AppCompatActivity {
 
                 a.Arbol(a.AcomodarExpresion(expresion.getText().toString(), ediTvalorn.getText().toString()));
                 double resp = a.Resultado();
-                /*for (int i=0; i<=edtif.getText().length();i++){
+               /* for (int i=0; i<=edtif.getText().length();i++){
 
 
                         Character ifn=edtif.getText().charAt(i);
