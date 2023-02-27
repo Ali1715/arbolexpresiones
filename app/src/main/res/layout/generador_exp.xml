@@ -21,8 +21,8 @@
 
     <View
         android:id="@+id/pregunta"
-        android:layout_width="303dp"
-        android:layout_height="97dp"
+        android:layout_width="282dp"
+        android:layout_height="67dp"
         android:background="@drawable/fondo_input"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,8 +33,8 @@
 
     <View
         android:id="@+id/expresion"
-        android:layout_width="308dp"
-        android:layout_height="44dp"
+        android:layout_width="303dp"
+        android:layout_height="66dp"
         android:background="@drawable/fondo_input"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,17 +59,16 @@
         android:id="@+id/textView2"
         android:layout_width="212dp"
         android:layout_height="35dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/view_inicio_forma"
         android:gravity="center"
         android:text="INICIO"
         app:autoSizeTextType="uniform"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -86,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pregunta"
-        app:layout_constraintVertical_bias="0.663" />
+        app:layout_constraintVertical_bias="0.696" />
 
     <TextView
         android:id="@+id/textView_n"
@@ -118,7 +117,7 @@
         android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="16dp"
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,12 +128,12 @@
         android:id="@+id/EdTexpresion"
         android:layout_width="306dp"
         android:layout_height="54dp"
-        app:layout_constraintBottom_toBottomOf="@+id/expresion"
-        app:layout_constraintEnd_toEndOf="@+id/expresion"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/expresion"
-        app:layout_constraintTop_toTopOf="@+id/expresion"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="0.207"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
@@ -158,5 +157,96 @@
         app:layout_constraintStart_toStartOf="@+id/input"
         app:layout_constraintTop_toTopOf="@+id/input"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttongen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="generar"
+        android:text="Generar"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="94dp"
+        android:background="@color/design_default_color_background"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.746" />
+
+    <EditText
+        android:id="@+id/editText_if"
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:ems="2"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/pregunta"
+        app:layout_constraintEnd_toEndOf="@+id/expresion"
+        app:layout_constraintStart_toStartOf="@+id/expresion"
+        app:layout_constraintTop_toTopOf="@+id/pregunta"
+        app:layout_constraintVertical_bias="0.48"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editText_if2"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:ems="5"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/pregunta"
+        app:layout_constraintEnd_toEndOf="@+id/pregunta"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toEndOf="@+id/editText_if"
+        app:layout_constraintTop_toTopOf="@+id/pregunta"
+        app:layout_constraintVertical_bias="0.476"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="9dp"
+        android:layout_height="27dp"
+        android:text="if"
+        app:layout_constraintBottom_toTopOf="@+id/editText_if"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expresion"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="63dp"
+        android:layout_height="15dp"
+        android:ems="2"
+        android:text="c="
+        app:layout_constraintBottom_toBottomOf="@+id/EdTexpresion"
+        app:layout_constraintEnd_toEndOf="@+id/EdTexpresion"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/EdTexpresion"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="23dp"
+        android:layout_height="43dp"
+        android:text="c"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/editText_if"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@+id/pregunta"
+        app:layout_constraintTop_toBottomOf="@+id/buttongen"
+        app:layout_constraintVertical_bias="0.951" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
