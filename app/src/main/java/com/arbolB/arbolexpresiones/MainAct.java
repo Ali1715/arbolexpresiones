@@ -59,25 +59,31 @@ public class MainAct extends AppCompatActivity {
 
                 a.Arbol(a.AcomodarExpresion(expresion.getText().toString(), ediTvalorn.getText().toString()));
                 double resp = a.Resultado();
-               /* for (int i=0; i<=edtif.getText().length();i++){
 
 
-                        Character ifn=edtif.getText().charAt(i);
+
+                        Character ifn=edtif.getText().charAt(0);
                         switch (ifn) {
                             case '>':
-                                if(Double.parseDouble(edtif2.getText().toString())<resp)
+                                if(Double.parseDouble(edtif2.getText().toString())<resp) {
                                     resultado.setText(String.valueOf(resp));
-
+                                }
+                                else
+                                    resultado.setText("No es mayor");
                                 break;
                             case '<':
-                                if(Double.parseDouble(edtif2.getText().toString())>resp)
+                                if(Double.parseDouble(edtif2.getText().toString())>resp) {
                                     resultado.setText(String.valueOf(resp));
-
+                                }
+                                else
+                                    resultado.setText("No es menor");
                                     break;
                             case '=':
-                                if(resp==Double.parseDouble(edtif2.getText().toString()))
+                                if(resp==Double.parseDouble(edtif2.getText().toString())) {
                                     resultado.setText(String.valueOf(resp));
-
+                                }
+                                else
+                                    resultado.setText("no es igial");
                                 break;
                             default:
                                 ;
@@ -85,9 +91,9 @@ public class MainAct extends AppCompatActivity {
 
                         }
 
-                }*/
 
-                resultado.setText(String.valueOf(resp));
+
+             //   resultado.setText(String.valueOf(resp));
 
 
             }
@@ -124,8 +130,8 @@ public class MainAct extends AppCompatActivity {
         switch (i) {
 
                  case 1:
-                textView.append(n + "\n");     //solo muestra los valores de
-                      textView.append(x + "\n");
+                textView.append("n="+n + "\n");     //solo muestra los valores de
+                      textView.append("c="+x + "\n");
                       textView.append("if " + "c" + m + e + ":"+ "\n");
                      textView.append("print("+r +  ")" +"\n");
                      break;

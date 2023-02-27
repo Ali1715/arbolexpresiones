@@ -138,8 +138,8 @@
 
     <TextView
         android:id="@+id/Textview_resultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="27dp"
         android:ems="10"
         app:layout_constraintBottom_toBottomOf="@+id/output"
         app:layout_constraintEnd_toEndOf="@+id/output"
